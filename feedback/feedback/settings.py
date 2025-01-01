@@ -123,3 +123,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# This is added because by default in "models.py" file in "profiles" app the path we added
+# for "upload_to" i.e. "images" will look for the path in the system not in the project
+# So for that we are adding this setting wchich tells the django where our files should be 
+# srored in general and then any folder we point at the "models.py" will be a subfolder
+# to this "MEDIA_ROOT"
+
+MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_URL = "/user-media/"
