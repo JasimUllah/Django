@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from django.views.generic import ListView #DetailView
+from django.views.generic import ListView  # DetailView
 from django.views import View
 
 from .models import Post
@@ -20,7 +20,8 @@ from .forms import CommentForm
 
 class StartingPageView(ListView):
     template_name = "blog/index.html"
-    model = Post                    # The model we are using is for fetching the posts from "Post" model
+    # The model we are using is for fetching the posts from "Post" model
+    model = Post
     ordering = ["-date"]
     context_object_name = "posts"
 
@@ -83,7 +84,7 @@ class SinglePostView(View):
             comment.post = post
             comment.save()
             return HttpResponseRedirect(reverse("posts-detail-page", args=[slug]))
-      
+
         context = {
             "post": post,
             "post_tags": post.tags.all(),
@@ -92,3 +93,8 @@ class SinglePostView(View):
             "comments": post.comments.all().order_by("-id")
         }
         return render(request, "blog/post-detail.html", context)
+
+
+class ReadLaterView(View):
+    def post(self, request):
+        pass
