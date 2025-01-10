@@ -15,7 +15,8 @@
   .post a:hover,
   .post a:active {
     transform: scale(1.1);
-    background-color: #390281;
+    /* background-color: #390281; */
+    background: linear-gradient(to right bottom, #6305dd, #390281);
     color: white;
   }
   

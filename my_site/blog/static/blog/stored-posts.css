@@ -10,7 +10,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     background-color: white;
     width: 90%;
-    max-width: 30rem;
+    max-width: 50rem;
     text-align: center;
   }
 
@@ -22,6 +22,7 @@
 
   #stored-posts li {
     margin: 1rem 0;
+    background-color: rgb(243, 238, 229);
   }
 
   #stored-posts a {
@@ -37,5 +38,7 @@
 
   #stored-posts a:hover,
   #stored-posts a:active {
-    background-color: #ccc;
+    /* background-color: #ccc; */
+    background: linear-gradient(to left bottom, #6305dd, #390281);
+    color: white;
   }
