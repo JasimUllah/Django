@@ -22,7 +22,7 @@ body {
 #summary h2 {
   color: white;
   font-size: 4.5rem;
-  margin-bottom: 0.25rem;
+  /* margin-bottom: 1rem; */
 }
 
 #summary article {
@@ -38,10 +38,10 @@ body {
 #summary article img {
   width: 12rem;
   height: 12rem;
-  border-radius: 12px;
-  transform: rotateZ(5deg);
+  border-radius: 50%;
+  /* transform: rotateZ(5deg); */
   border: 5px solid white;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #summary address {
@@ -96,11 +96,11 @@ main {
 #comment-form {
   margin: 3rem auto;
   width: 90%;
-  max-width: 40rem;
+  max-width: 60rem;
   border-radius: 12px;
   background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 #comment-form button {
