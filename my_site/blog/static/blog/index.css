@@ -1,3 +1,7 @@
+body {
+  background-color: #e7e7e7;
+}
+
 #welcome {
     background: linear-gradient(to right top, #6305dd, #390281);
     padding: 4rem 12%;
@@ -24,7 +28,7 @@
   #welcome h2 {
     font-size: 3.5rem;
     margin: 0 0 0 3rem;
-    color: #e4e4e4;
+    color: white;
     width: 10rem;
   }
   
@@ -36,7 +40,7 @@
   }
   
   #latest-posts {
-    background-color: white;
+    background-color: #e7e7e7;    
     padding: 2rem;
     border-radius: 12px;
     width: 60rem;
@@ -54,7 +58,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
   }
 
   .post a {
