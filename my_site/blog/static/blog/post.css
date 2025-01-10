@@ -25,10 +25,11 @@
     height: 5rem;
     object-fit: cover;
     border-radius: 50%;
+    margin: 1rem 0;
   }
   
   .post h3 {
-    margin: 0.25rem 0;
+    margin: 1rem 0;
   }
   
   .post time {
