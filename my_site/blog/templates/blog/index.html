@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  My Blog
+{% endblock %}
+
+{% block css_files %}
+  <link rel="stylesheet" href="{% static 'blog/post.css' %}" />
+  <link rel="stylesheet" href="{% static 'blog/index.css' %}" />
+{% endblock %}
+
+{% block content %}
+  <section id="welcome">
+    <header>
+      <img src="{% static 'blog/images/jasim.jpeg' %}" alt="Jasim - The Author of This Blog" />
+      <h2>JASIM'S BLOG</h2>
+    </header>
+    <p>Hi, I am Jasim Ullah and I am a Computer Systems Engineer</p>
+  </section>
+
+  <section id="latest-posts">
+    <h2>My Latest Achievements</h2>
+    <ul>
+      {% for post in posts %}
+        {% include 'blog/includes/post.html' %}
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>What I Do</h2>
+    <p>I love programming , I love to help others and I enjoy exploring new technologies in general</p>
+    <p>My goal is to keep on growing as adeveloper - and if I could help you do the same, I'd be verry happy!</p>
+  </section>
+{% endblock %}
